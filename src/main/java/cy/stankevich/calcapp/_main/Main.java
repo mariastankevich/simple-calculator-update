@@ -17,16 +17,15 @@ public class Main {
         if (operation == '+') {
             float resultsum = Calculator.sum(num1, num2, operation);
             ResultWriterService.printResult(operation, num1, num2, resultsum);
-        }
-
-        if (operation == '-') {
+        } else if (operation == '-') {
             float resultdeduct = Calculator.deduct(num1, num2, operation);
             ResultWriterService.printResult(operation, num1, num2, resultdeduct);
-        }
-
-        if (operation == '*') {
+        } else if (operation == '*') {
             float resultmultyply = Calculator.multyply(num1, num2, operation);
             ResultWriterService.printResult(operation, num1, num2, resultmultyply);
+        } else {
+            System.out.println("not valid operation");
+
         }
     }
 }
